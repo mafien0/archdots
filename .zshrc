@@ -20,3 +20,8 @@ alias l="ls -la"
 alias french="fastfetch"
 alias p="paru --needed"
 alias yay="paru"
+
+# Applications
+alias alac="alacritty"
+alias t="tmux"
+alias v="code"
