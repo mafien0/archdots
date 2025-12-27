@@ -18,4 +18,5 @@ alias l="ls -la"
 
 # Arch linux
 alias french="fastfetch"
-alias p="paru"
+alias p="paru --needed"
+alias yay="paru"
