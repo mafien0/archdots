@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+sudo -v
+paru -Slq | fzf --preview 'paru -Si {1}' --layout=reverse | xargs -ro paru -S

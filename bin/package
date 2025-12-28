@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import subprocess
+import sys
+import argparse
+from pathlib import Path
+
+parser = argparse.ArgumentParser()
+parser.add_argument("action", help="aur/pacman/remove")
+args = parser.parse_args()
+
+script_path = Path.home() / "bin" / args.action
+
+if not script_path.exists():
+    print(f"Script not found: {script_path}")
+    sys.exit(1)
+
+subprocess.run(f"alacritty --class 'popup' -e {script_path}", shell=True)
