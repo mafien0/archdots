@@ -56,7 +56,7 @@ scrollbar {
 
 .input selection {
   background: lighter(lighter(lighter(@window_bg_color)));
-r
+}
 
 .input {
   caret-color: @theme_fg_color;

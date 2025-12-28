@@ -4,7 +4,7 @@ hide_action_hints = true
 theme = "custom"
 
 [columns]
-symbols = 1
+symbols = 3
 
 [providers]
 default = [
