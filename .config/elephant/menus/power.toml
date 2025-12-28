@@ -1,0 +1,19 @@
+name = "power"
+name_pretty = "Power"
+icon = "applications-other"
+
+[[entries]]
+text = "Shutdown"
+actions = {"shutdown" = "shutdown now"}
+
+[[entries]]
+text = "Reboot"
+actions = {"reboot" = "reboot"}
+
+[[entries]]
+text = "Suspend"
+actions = {"suspend" = "systemctl suspend"}
+
+[[entries]]
+text = "Log Out"
+actions = {"logout" = "hyprctl dispatch exit"}

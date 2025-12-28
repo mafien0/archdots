@@ -9,8 +9,8 @@ actions = {"ia" = "package aur"}
 
 [[entries]]
 text = "Install from Pacman"
-keyword = ["rp", "pr", "pacman", "install"]
-actions = {"rp" = "package pacman"}
+keyword = ["ip", "pi", "pacman", "install"]
+actions = {"ip" = "package pacman"}
 
 [[entries]]
 text = "Remove package"
