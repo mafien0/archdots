@@ -1,0 +1,7 @@
+icon = "web-browser"
+name_pretty = "Web Search"
+
+[[entries]]
+default = true
+name = "DuckDuckGo"
+url = "https://duckduckgo.com/?q=%TERM%"
