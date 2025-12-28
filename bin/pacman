@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 sudo -v
-pacman -Slq | fzf --preview 'pacman -Si {1}' --layout=reverse | xargs -ro sudo pacman -S --noconfirm
+pacman -Slq | fzf --preview 'pacman -Si {1}' --layout=reverse | xargs -ro sudo pacman --needed --noconfirm -S

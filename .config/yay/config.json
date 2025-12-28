@@ -1,0 +1,13 @@
+{
+  "bottomup": true,
+  "cleanafter": true,
+  "removemake": "yes",
+  "provides": false,
+  "sudoloop": true,
+  "answerdiff": "None",
+  "answeredit": "None",
+  "answerclean": "None",
+  "answerupgrade": "None",
+  "devel": true,
+  "develsuffixes": ["-git", "-cvs", "-svn", "-bzr", "-darcs", "-always"]
+}

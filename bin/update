@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+sudo -v
+sudo pacman -Syu
+yay -Syu
