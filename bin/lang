@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+lang=$(hyprctl devices -j | jq -r '.keyboards[] | select(.main == true) | .active_keymap')
+notify-send -t 1000 -a "popup" "$lang"

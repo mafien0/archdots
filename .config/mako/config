@@ -1,0 +1,35 @@
+sort=-time
+layer=overlay
+width=450
+height=300
+progress-color=over #3c3c3c
+text-color=#f0f0f0
+border-color=#585a5c
+background-color=#2c2c2c
+border-size=1
+border-radius=5
+icons=1
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+font=monospace 14
+
+[urgency=high]
+default-timeout=0
+
+[category=mpd]
+default-timeout=2000
+group-by=category
+
+[app-name=popup]
+layer=overlay
+default-timeout=1000
+background-color=#2c2c2c
+history=0
+anchor=top-center
+group-by=app-name
+format=<b>%s</b>\n%b
+
+[app-name=volume group-index=0]
+# Only show last notification
+invisible=0
