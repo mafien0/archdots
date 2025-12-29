@@ -5,19 +5,19 @@ icon = "applications-other"
 [[entries]]
 text = "Install from AUR"
 keyword = ["ia", "ai", "aur", "install"]
-actions = {"ia" = "package aur"}
+actions = {"ia" = "menu package-aur"}
 
 [[entries]]
 text = "Install from Pacman"
 keyword = ["ip", "pi", "pacman", "install"]
-actions = {"ip" = "package pacman"}
+actions = {"ip" = "menu package-pacman"}
 
 [[entries]]
-text = "Remove package"
+text = "Remove menu"
 keyword = ["r", "remove"]
-actions = {"r" = "package remove"}
+actions = {"r" = "menu package-remove"}
 
 [[entries]]
 text = "Update system"
 keyword = ["upd"]
-actions = {upd = "package update"}
+actions = {upd = "menu package-update"}

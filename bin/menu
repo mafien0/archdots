@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("action", help="aur/pacman/remove/update")
 args = parser.parse_args()
 
-script_path = Path.home() / "bin" / args.action
+script_path = Path.home() / "bin" / "scripts" / args.action
 
 if not script_path.exists():
     print(f"Script not found: {script_path}")
