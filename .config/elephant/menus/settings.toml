@@ -1,0 +1,11 @@
+name = "settings"
+name_pretty = "Settings"
+icon = "applications-other"
+
+[[entries]]
+text = "Audio Settings"
+actions = {"open" = "pwvucontrol"}
+
+[[entries]]
+text = "Change wallpaper"
+actions = {"open" = "waypaper"}

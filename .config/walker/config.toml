@@ -10,8 +10,6 @@ symbols = 3
 default = [
   "desktopapplications",
   "calc",
-  "runner",
-  "websearch",
 ]
 
 [[providers.prefixes]]
