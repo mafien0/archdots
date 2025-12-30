@@ -26,6 +26,7 @@ window#waybar {
 #memory,
 #custom-notification,
 #pulseaudio,
+#custom-mic,
 #custom-spacer,
 #clock {
 	color: @text;
@@ -77,4 +78,9 @@ window#waybar {
 
 #custom-notification {
 	margin-right: 0px;
+}
+
+/* Mic */
+#custom-mic {
+    font-size: 16px;
 }

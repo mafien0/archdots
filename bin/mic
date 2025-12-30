@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+STATUS=$(wpctl get-volume @DEFAULT_AUDIO_SOURCE@)
+
+if [[ $STATUS == *"MUTED"* ]]; then
+    notify-send -t 1000 -a 'popup' -h string:x-canonical-private-synchronous:microphone "Microphone: Muted"
+else
+    volume=$(echo "$STATUS" | awk '{print $2}')
+    volume=$(echo "( $volume * 100 ) / 1" | bc)
+    notify-send -t 1000 -a 'popup' -h string:x-canonical-private-synchronous:microphone -h int:value:$volume "Microphone: ${volume}%"
+fi

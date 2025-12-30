@@ -11,6 +11,8 @@
 		"hyprland/window"
 	],
 	"modules-right": [
+		"custom/mic",
+		"custom/spacer",
 		"pulseaudio",
 		"custom/spacer",
 		"memory",
@@ -62,5 +64,11 @@
 		"interval": 30,
 		"format": "{percentage}%  ",
 		"on-click": "menu system-btop"
+	},
+	"custom/mic": {
+		"exec": "~/.config/waybar/scripts/mic-status.sh",
+		"return-type": "json",
+		"interval": 1,
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && mic"
 	}
 }
