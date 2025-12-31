@@ -17,6 +17,7 @@ export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin:$HOME/.local/bin:$HOME/bin
 eval "$(starship init zsh)"
 
 # Aliases
+alias cdd="cd $HOME/dotfiles"
 
 # Basic
 alias die="shutdown now"
@@ -35,3 +36,6 @@ alias t="tmux"
 # Trying out helix
 alias v="helix"
 alias hx="helix"
+
+# opencode
+export PATH=/home/mafien0/.opencode/bin:$PATH
