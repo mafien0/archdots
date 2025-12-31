@@ -31,4 +31,7 @@ alias paru="yay"
 # Applications
 alias alac="alacritty"
 alias t="tmux"
-alias v="code"
+
+# Trying out helix
+alias v="helix"
+alias hx="helix"
