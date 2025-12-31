@@ -13,7 +13,7 @@ keyword = ["ip", "pi", "pacman", "install"]
 actions = {"ip" = "menu package-pacman"}
 
 [[entries]]
-text = "Remove menu"
+text = "Remove package"
 keyword = ["r", "remove"]
 actions = {"r" = "menu package-remove"}
 
