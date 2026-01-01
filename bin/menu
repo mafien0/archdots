@@ -15,3 +15,4 @@ if not script_path.exists():
     sys.exit(1)
 
 subprocess.run(f"alacritty --class 'popup' -e {script_path}", shell=True)
+

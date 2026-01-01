@@ -34,7 +34,10 @@ alias alac="alacritty"
 alias t="tmux"
 
 # Trying out helix
+export EDITOR="helix"
 alias v="helix"
+alias vi="helix"
+alias vim="helix"
 alias hx="helix"
 
 # opencode
