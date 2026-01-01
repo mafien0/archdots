@@ -11,6 +11,7 @@
 		"hyprland/window"
 	],
 	"modules-right": [
+		"idle_inhibitor",
 		"custom/mic",
 		"custom/spacer",
 		"pulseaudio",
@@ -70,5 +71,12 @@
 		"return-type": "json",
 		"interval": 1,
 		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && mic"
+	},
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		}
 	}
 }

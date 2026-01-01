@@ -28,6 +28,7 @@ window#waybar {
 #pulseaudio,
 #custom-mic,
 #custom-spacer,
+#idle_inhibitor,
 #clock {
 	color: @text;
 }
@@ -43,6 +44,11 @@ window#waybar {
 /* Spacer */
 #custom-spacer {
 	margin: 0 3px 0 3px;
+}
+
+#custom-mic,
+#idle_inhibitor {
+	margin: 0 7px 0 0;
 }
 
 /* Workspaces */
