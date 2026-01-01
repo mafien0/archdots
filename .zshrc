@@ -3,12 +3,15 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
+# History
 autoload -U up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
-
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
+
+# Weird `%` each time i open new terminal
+unsetopt PROMPT_SP
 
 # More PATH
 export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin:$HOME/.local/bin:$HOME/bin
@@ -33,7 +36,7 @@ alias paru="yay"
 alias alac="alacritty"
 alias t="tmux"
 
-# Trying out helix
+# HELIX
 export EDITOR="helix"
 alias v="helix"
 alias vi="helix"
@@ -42,3 +45,4 @@ alias hx="helix"
 
 # opencode
 export PATH=/home/mafien0/.opencode/bin:$PATH
+
