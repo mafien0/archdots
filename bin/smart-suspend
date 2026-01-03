@@ -1,5 +1,0 @@
-#!/bin/bash
-# Check if hyprlock is running
-if pgrep -x "hyprlock" > /dev/null; then
-    systemctl suspend
-fi
