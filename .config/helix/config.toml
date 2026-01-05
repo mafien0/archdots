@@ -25,7 +25,7 @@ mode.select = "SELECT"
 [editor.lsp]
 enable = true
 display-messages = true
-auto-signature-help = true
+auto-signature-help = false
 
 [keys.normal]
 # Base

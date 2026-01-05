@@ -11,7 +11,7 @@
 popover {
   background: lighter(@window_bg_color);
   border: 1px solid darker(@accent_bg_color);
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 10px;
 }
 
@@ -33,7 +33,7 @@ scrollbar {
     0 15px 12px rgba(0, 0, 0, 0.22);
   background: @window_bg_color;
   padding: 20px;
-  border-radius: 0px;
+  border-radius: 5px;
   border: 1px solid darker(@accent_bg_color);
 }
 
@@ -47,7 +47,7 @@ scrollbar {
 }
 
 .search-container {
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 .input placeholder {
@@ -86,7 +86,7 @@ child {
 }
 
 .item-box {
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 10px;
 }
 
@@ -120,8 +120,8 @@ child:selected .item-box {
 
 .preview {
   border: 1px solid alpha(@accent_bg_color, 0.25);
-  /* padding: 10px; */
-  border-radius: 0px;
+  border-radius: 5px;
+  padding: 3px;
   color: @theme_fg_color;
 }
 
@@ -188,7 +188,7 @@ child:selected .item-box {
 
 .keybind-label {
   padding: 2px 4px;
-  border-radius: 0px;
+  border-radius: 5px;
   border: 1px solid @theme_fg_color;
 }
 
