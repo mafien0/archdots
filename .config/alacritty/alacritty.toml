@@ -1,5 +1,7 @@
+
 [general]
 live_config_reload = true
+import = ["./theme.toml"]
 
 [window.padding]
 x = 5
@@ -24,4 +26,3 @@ style = "Italic"
 [cursor.style]
 shape = "Beam"
 blinking = "Off"
-

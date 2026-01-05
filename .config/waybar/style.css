@@ -1,5 +1,5 @@
 @define-color background            #2c2c2c;
-@define-color border                #585a5c;
+@define-color border                #292929;
 @define-color text                  #f0f0f0;
 
 @define-color ws-focused            #fff4e6;
@@ -8,15 +8,17 @@
 @define-color ws-urgent             #923330;
 
 * {
-	font-family: "FiraCode Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 10pt;
+    font-family:
+        "FiraCode Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
 }
 
 /* Bar itself */
 window#waybar {
-	background: @background;
-	border-bottom: 2px solid @border;
+    background: @background;
+    border: 2px solid @border;
+    border-radius: 5px;
 }
 
 /* Text colors */
@@ -30,60 +32,60 @@ window#waybar {
 #custom-spacer,
 #idle_inhibitor,
 #clock {
-	color: @text;
+    color: @text;
 }
 
 /* Apply margin to first and last module */
 #workspaces {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 #clock {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
 /* Spacer */
 #custom-spacer {
-	margin: 0 3px 0 3px;
+    margin: 0 3px 0 3px;
 }
 
 #custom-mic,
 #idle_inhibitor {
-	margin: 0 7px 0 0;
+    margin: 0 7px 0 0;
 }
 
 /* Workspaces */
 
 #workspaces button {
-	padding: 0 7px 0 7px;
-	border-radius: 0;
-	color: @ws-active-text;
-	min-width: 10px;
-	min-height: 10px
+    padding: 0 7px 0 7px;
+    border-radius: 0;
+    color: @ws-active-text;
+    min-width: 10px;
+    min-height: 10px;
 }
 
 #workspaces button:hover {
-	color: @ws-active-text;
+    color: @ws-active-text;
 }
 
 #workspaces button.empty {
-	padding: 0 7px 0 7px;
-	border-radius: 0;
-	color: @ws-persistent-text;
+    padding: 0 7px 0 7px;
+    border-radius: 0;
+    color: @ws-persistent-text;
 }
 
 #workspaces button.active {
-	padding: 2px 7px 0 7px;
-	border-bottom: 2px solid @ws-focused;
-	color: @ws-active-text;
+    padding: 2px 7px 0 7px;
+    border-bottom: 2px solid @ws-focused;
+    color: @ws-active-text;
 }
 
 #workspaces button.urgent {
-	padding: 2px 7px 0 7px;
-	border-bottom: 2px solid @ws-urgent;
+    padding: 2px 7px 0 7px;
+    border-bottom: 2px solid @ws-urgent;
 }
 
 #custom-notification {
-	margin-right: 0px;
+    margin-right: 0px;
 }
 
 /* Mic */
