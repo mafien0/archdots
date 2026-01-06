@@ -33,4 +33,20 @@
       "shift-tab": "vim::Outdent",
     },
   },
+  {
+    "bindings": {
+      "g c": "vim::Comment"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-c": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ]
+    }
+  }
 ]

@@ -37,13 +37,12 @@ alias paru="yay"
 alias alac="alacritty"
 alias t="tmux"
 
-# HELIX
-export EDITOR="helix"
-alias v="helix"
-alias vi="helix"
-alias vim="helix"
-alias hx="helix"
+# Zed
+export EDITOR="zeditor"
+alias zed="zeditor"
+alias v="zeditor"
+alias vi="zeditor"
+alias vim="zeditor"
 
 # opencode
 export PATH=/home/mafien0/.opencode/bin:$PATH
-

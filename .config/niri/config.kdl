@@ -1,0 +1,17 @@
+include "input.kdl"       // Input & Keybinds
+include "style.kdl"       // Layout & Animations
+include "windowrules.kdl" // Window Rules
+include "misc.kdl"        // Misc
+
+output "HDMI-A-1" {
+    mode "1920x1080@75"
+}
+
+spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &> /tmp/polkit.log"
+spawn-sh-at-startup "elephant &> /tmp/elephant.log"
+spawn-sh-at-startup "walker --gapplication-service &> /tmp/walker.log"
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store &> /tmp/cliphist.log"
+spawn-sh-at-startup "swaybg &> /tmp/swaybg.log"
+spawn-sh-at-startup "waybar &> /tmp/waybar.log"
+spawn-sh-at-startup "waypaper --restore"
+spawn-sh-at-startup "mako &> /tmp/mako.log"
