@@ -46,3 +46,5 @@ alias vim="zeditor"
 
 # opencode
 export PATH=/home/mafien0/.opencode/bin:$PATH
+
+if [ -e /home/mafien0/.nix-profile/etc/profile.d/nix.sh ]; then . /home/mafien0/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
