@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-lang=$(hyprctl devices -j | jq -r '.keyboards[] | select(.main == true) | .active_keymap')
+lang=$(niri msg keyboard-layouts | grep '^\s*\*' | awk '{$1=$2=""; print $0}' | xargs)
 notify-send -t 1000 -a "popup" "$lang"

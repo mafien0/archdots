@@ -1,7 +1,7 @@
 include "input.kdl"       // Input & Keybinds
 include "style.kdl"       // Layout & Animations
-include "windowrules.kdl" // Window Rules
-include "misc.kdl"        // Misc
+include "windowrules.kdl" // Window/Layer Rules
+include "env.kdl"         // Env variables
 
 output "HDMI-A-1" {
     mode "1920x1080@75"

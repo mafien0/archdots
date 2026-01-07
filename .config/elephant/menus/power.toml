@@ -16,4 +16,4 @@ actions = {"suspend" = "systemctl suspend"}
 
 [[entries]]
 text = "Log Out"
-actions = {"logout" = "hyprctl dispatch exit"}
+actions = {"logout" = "niri msg action quit"}

@@ -28,7 +28,6 @@ window#waybar {
 #memory,
 #custom-notification,
 #pulseaudio,
-#custom-mic,
 #custom-spacer,
 #idle_inhibitor,
 #clock {
@@ -48,7 +47,7 @@ window#waybar {
     margin: 0 3px 0 3px;
 }
 
-#custom-mic,
+#pulseaudio.mic,
 #idle_inhibitor {
     margin: 0 7px 0 0;
 }
@@ -89,6 +88,6 @@ window#waybar {
 }
 
 /* Mic */
-#custom-mic {
+#pulseaudio.mic {
     font-size: 16px;
 }
