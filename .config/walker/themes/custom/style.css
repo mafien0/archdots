@@ -1,8 +1,8 @@
 @define-color window_bg_color #212121;
-@define-color accent_bg_color #E5E5E5;
+@define-color accent_bg_color #e5e5e5;
 @define-color theme_fg_color  #fff4e6;
-@define-color error_bg_color  #C34043;
-@define-color error_fg_color  #DCD7BA;
+@define-color error_bg_color  #c34043;
+@define-color error_fg_color  #dcd7ba;
 
 * {
     all: unset;
@@ -34,7 +34,7 @@ scrollbar {
     background: @window_bg_color;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid darker(@accent_bg_color);
+    border: 1px solid @theme_fg_color;
 }
 
 .preview-box,

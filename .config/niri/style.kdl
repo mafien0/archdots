@@ -1,3 +1,5 @@
+prefer-no-csd
+
 layout {
     gaps 10
     center-focused-column "never"
@@ -11,7 +13,7 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
-        width 2
+        width 3
 
         active-color "#fff4e6"
         inactive-color "#2c2c2ce6"
@@ -26,7 +28,7 @@ layout {
 }
 cursor {
     // Theme is configured via nwg-look
-    xcursor-size 22
+    xcursor-size 20
 }
 
 // Border Rounding
@@ -39,7 +41,9 @@ hotkey-overlay {
     skip-at-startup
 }
 
-prefer-no-csd
+overview {
+    backdrop-color "#1e1e1e"
+}
 
 animations {
     workspace-switch {
