@@ -23,6 +23,23 @@
     "tooltip": false,
     "format": "|",
   },
+  "niri/workspaces": {
+    "format": "{index}",
+  },
+  "clock": {
+    "interval": 60,
+    "format": "{:%d/%m/%y %H:%M}",
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "{usage}%  ",
+    "on-click": "menu system-btop",
+  },
+  "memory": {
+    "interval": 30,
+    "format": "{percentage}%  ",
+    "on-click": "menu system-btop",
+  },
   "pulseaudio": {
     "format": "{volume}% {icon} ",
     "format-bluetooth": "{volume}% {icon} ",
@@ -39,23 +56,6 @@
       "car": "",
       "default": ["", ""],
     },
-  },
-  "niri/workspaces": {
-    "format": "{value}",
-  },
-  "clock": {
-    "interval": 60,
-    "format": "{:%d/%m/%y %H:%M}",
-  },
-  "cpu": {
-    "interval": 10,
-    "format": "{usage}%  ",
-    "on-click": "menu system-btop",
-  },
-  "memory": {
-    "interval": 30,
-    "format": "{percentage}%  ",
-    "on-click": "menu system-btop",
   },
   "pulseaudio#mic": {
     "format": "{format_source}",

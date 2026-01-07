@@ -42,10 +42,10 @@ binds {
     Mod+L     { focus-column-right; }
 
     // Move windows
-    Mod+Ctrl+H    { move-column-left; }
-    Mod+Ctrl+J    { move-window-down-or-to-workspace-down; }
-    Mod+Ctrl+K    { move-window-up-or-to-workspace-up; }
-    Mod+Ctrl+L    { move-column-right; }
+    Mod+Shift+H    { move-column-left; }
+    Mod+Shift+J    { move-window-down-or-to-workspace-down; }
+    Mod+Shift+K    { move-window-up-or-to-workspace-up; }
+    Mod+Shift+L    { move-column-right; }
 
     // Move to first/last
     Mod+G            { focus-column-first; }

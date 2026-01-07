@@ -5,12 +5,28 @@ layer-rule {
     opacity 0.99
 }
 
-
+// PiP
 window-rule {
     match title="^Picture-in-Picture$"
     draw-border-with-background false
     focus-ring { off; }
     shadow { off; }
     geometry-corner-radius 0
+    open-floating true
+}
+
+// Popup menus
+window-rule {
+    match app-id="popup"
+    match app-id="com.saivert.pwvucontrol"
+    match app-id="waypaper"
+    open-floating true
+    default-window-height { proportion 0.8; }
+    default-column-width { proportion 0.8; }
+}
+
+// Floats
+window-rule {
+    match title="Calculator"
     open-floating true
 }
