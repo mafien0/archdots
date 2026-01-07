@@ -24,6 +24,10 @@ layout {
         color "#0007"
     }
 }
+cursor {
+    // Theme is configured via nwg-look
+    xcursor-size 22
+}
 
 // Border Rounding
 window-rule {
