@@ -1,5 +1,0 @@
-[general]
-early-exit = true
-copy-command = "wl-copy"
-output-filename = "~/Pictures/Screenshots/sc-%Y-%m-%d_%H:%M:%S.png"
-action-on-enter = "save-to-clipboard"

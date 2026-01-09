@@ -20,3 +20,8 @@ workspace "main"
 workspace "browser"
 workspace "messenger"
 workspace "misc"
+
+// Nvidia, f*ck you!
+debug {
+    disable-cursor-plane
+}
