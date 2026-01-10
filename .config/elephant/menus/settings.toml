@@ -12,4 +12,4 @@ actions = {"open" = "waypaper"}
 
 [[entries]]
 text = "Task manager"
-actions = {"open" = "menu system-btop"}
+actions = {"open" = "gnome-system-monitor"}

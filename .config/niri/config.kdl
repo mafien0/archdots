@@ -4,11 +4,10 @@ include "windowrules.kdl" // Window/Layer Rules
 include "env.kdl"         // Env variables
 
 output "HDMI-A-1" {
-    mode "1920x1080@75"
+    mode "1920x1080@74.99"
 }
 
-spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-sh-at-startup "elephant"
+spawn-sh-at-startup "lxpolkit"
 spawn-sh-at-startup "walker --gapplication-service"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
 spawn-sh-at-startup "swaybg"

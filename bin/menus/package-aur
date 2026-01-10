@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-sudo -v
-yay -Slq | fzf --preview 'yay -Si {1}' --layout=reverse | xargs -ro yay --needed -S

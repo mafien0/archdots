@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-sudo -v
-pacman -Qq | fzf --preview 'pacman -Qi {1}' --layout=reverse | xargs -ro sudo pacman -Rns

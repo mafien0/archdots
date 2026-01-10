@@ -3,21 +3,13 @@ name_pretty = "Package"
 icon = "applications-other"
 
 [[entries]]
-text = "Install from AUR"
-keyword = ["ia", "ai", "aur", "install"]
-actions = {"ia" = "menu package-aur"}
+text = "Install Package"
+actions = {"ip" = "menu package-install"}
 
 [[entries]]
-text = "Install from Pacman"
-keyword = ["ip", "pi", "pacman", "install"]
-actions = {"ip" = "menu package-pacman"}
-
-[[entries]]
-text = "Remove package"
-keyword = ["r", "remove"]
+text = "Remove Package"
 actions = {"r" = "menu package-remove"}
 
 [[entries]]
-text = "Update system"
-keyword = ["upd"]
+text = "Update System"
 actions = {upd = "menu package-update"}
