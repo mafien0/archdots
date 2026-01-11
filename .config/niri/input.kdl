@@ -38,6 +38,7 @@ binds {
     Mod+Shift+F repeat=false { fullscreen-window; }
     Mod+Shift+V repeat=false { toggle-window-floating; }
     Mod+V       repeat=false { switch-focus-between-floating-and-tiling; }
+    Mod+I       repeat=false { spawn-sh "swaylock --clock --indicator"; }
 
     // Util
     Mod+X            repeat=false { spawn-sh "hyprpicker -a -l"; }
@@ -57,11 +58,34 @@ binds {
     Mod+Shift+K    { move-window-up-or-to-workspace-up; }
     Mod+Shift+L    { move-column-right; }
 
+    // Column center
+    Mod+Ctrl+C { center-column; }
+
     // Move to first/last
     Mod+G            { focus-column-first; }
     Mod+Shift+G      { focus-column-last; }
     Mod+Ctrl+G       { move-column-to-first; }
     Mod+Ctrl+Shift+G { move-column-to-last; }
+
+    // Column width
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+
+    // Window in column height
+    Mod+Shift+Minus { set-window-height "-10%"; }
+    Mod+Shift+Equal { set-window-height "+10%"; }
+
+    // In/Out of collumn
+    Mod+BracketLeft  { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
+    Mod+Comma        { consume-window-into-column; }
+    Mod+Period       { expel-window-from-column; }
+
+    // Window size
+    Mod+R { switch-preset-column-width; }
+    Mod+Ctrl+R { reset-window-height; }
+    Mod+Shift+R { switch-preset-window-height; }
+    Mod+Ctrl+Shift+R { reset-window-height; }
 
     // Mouse scroll
     Mod+WheelScrollDown       cooldown-ms=150 { focus-workspace-down; }
@@ -91,34 +115,15 @@ binds {
     Mod+Shift+8 { move-window-to-workspace 8; }
     Mod+Shift+9 { move-window-to-workspace 9; }
 
-    // In/Out of collumn
-    Mod+BracketLeft  { consume-or-expel-window-left; }
-    Mod+BracketRight { consume-or-expel-window-right; }
-    Mod+Comma        { consume-window-into-column; }
-    Mod+Period       { expel-window-from-column; }
-
-    // Window size
-    Mod+R { switch-preset-column-width; }
-    Mod+Ctrl+R { reset-window-height; }
-    Mod+Shift+R { switch-preset-window-height; }
-    Mod+Ctrl+Shift+R { reset-window-height; }
-
-    // Column center
-    Mod+Ctrl+C { center-column; }
-
-    // Column width
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
-
-    // Window in column height
-    Mod+Shift+Minus { set-window-height "-10%"; }
-    Mod+Shift+Equal { set-window-height "+10%"; }
-
     // Language popup
     Mod+Space { spawn-sh "lang"; }
 
-    // Mic Mute
-    Mod+C allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && mic"; }
+    // Audio Control
+    Mod+C       allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && mic"; }
+    Mod+P       allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0 && volume"; }
+    Mod+Shift+P allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1- && volume"; }
+    Mod+O       allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0 && volume"; }
+    Mod+Shift+O allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05- && volume"; }
 
     // Needed
     XF86AudioRaiseVolume  allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0 && volume"; }
