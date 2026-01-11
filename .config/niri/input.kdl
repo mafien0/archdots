@@ -29,9 +29,7 @@ binds {
     // Walker
     Mod+A       hotkey-overlay-title="App Launcher"      { spawn "nc" "-U" "/run/user/1000/walker/walker.sock"; }
     Mod+Shift+C hotkey-overlay-title="Clipboard History" { spawn-sh "walker -m clipboard"; }
-    Mod+Shift+P hotkey-overlay-title="Install Packages"  { spawn-sh "walker -m menus:package"; }
     Mod+Shift+M hotkey-overlay-title="Power Menu"        { spawn-sh "walker -m menus:power"; }
-    Mod+Shift+O hotkey-overlay-title="Settings menu"     { spawn-sh "walker -m menus:settings"; }
 
     // Base
     Mod+Shift+Q repeat=false { close-window; }
