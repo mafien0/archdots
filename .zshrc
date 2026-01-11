@@ -16,6 +16,7 @@ unsetopt PROMPT_SP
 # More PATH
 export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin:$HOME/.local/bin:$HOME/bin
 export PATH=$PATH:$HOME/idea/bin
+export PATH=$PATH:~/.spicetify
 
 # Starship
 eval "$(starship init zsh)"

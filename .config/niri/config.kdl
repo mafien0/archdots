@@ -2,25 +2,16 @@ include "input.kdl"       // Input & Keybinds
 include "style.kdl"       // Layout & Animations
 include "windowrules.kdl" // Window/Layer Rules
 include "env.kdl"         // Env variables
+include "misc.kdl"        // Misc
 
 output "HDMI-A-1" {
-    mode "1920x1080@74.99"
+    mode "1920x1080@74.986"
 }
 
 spawn-sh-at-startup "lxpolkit"
 spawn-sh-at-startup "walker --gapplication-service"
-spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "swaybg"
 spawn-sh-at-startup "waybar"
 spawn-sh-at-startup "waypaper --restore"
 spawn-sh-at-startup "mako"
-
-workspace "main"
-workspace "browser"
-workspace "messenger"
-workspace "misc"
-
-// Nvidia, f*ck you!
-debug {
-    disable-cursor-plane
-}
