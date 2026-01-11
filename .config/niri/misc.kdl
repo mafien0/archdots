@@ -1,1 +1,14 @@
+// Persistent workspaces
+workspace "main"
+workspace "browser"
+workspace "messenger"
+workspace "misc"
+
+// Nvidia cursor bullshit
+debug {
+    disable-cursor-plane
+}
+
+// Screenshots
 screenshot-path "~/Pictures/Screenshots/sc-%Y-%m-%d_%H-%M-%S.png"
+

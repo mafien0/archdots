@@ -33,12 +33,12 @@
   "cpu": {
     "interval": 10,
     "format": "{usage}%  ",
-    "on-click": "menu system-btop",
+    "on-click": "gnome-system-monitor",
   },
   "memory": {
     "interval": 30,
     "format": "{percentage}%  ",
-    "on-click": "menu system-btop",
+    "on-click": "gnome-system-monitor",
   },
   "pulseaudio": {
     "format": "{volume}% {icon} ",

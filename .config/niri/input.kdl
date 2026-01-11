@@ -8,23 +8,32 @@ input {
     }
 }
 
+recent-windows {
+    binds {
+        Mod+Tab         { next-window; }
+        Mod+Shift+Tab   { previous-window; }
+        Mod+grave       { next-window     filter="app-id"; }
+        Mod+Shift+grave { previous-window filter="app-id"; }
+    }
+}
+
 binds {
 
     // Launchers
     Mod+Return  hotkey-overlay-title="Terminal"          { spawn "alacritty"; }
+    Mod+Shift+Return                                     { spawn-sh "alacritty --class popup"; }
+
     Mod+E       hotkey-overlay-title="File Manager"      { spawn "nautilus"; }
     Mod+W       hotkey-overlay-title="Toggle Waybar"     { spawn-sh "killall -SIGUSR1 waybar"; }
 
     // Walker
     Mod+A       hotkey-overlay-title="App Launcher"      { spawn "nc" "-U" "/run/user/1000/walker/walker.sock"; }
     Mod+Shift+C hotkey-overlay-title="Clipboard History" { spawn-sh "walker -m clipboard"; }
-    Mod+Shift+P hotkey-overlay-title="Install Packages"  { spawn-sh "walker -m menus:package"; }
     Mod+Shift+M hotkey-overlay-title="Power Menu"        { spawn-sh "walker -m menus:power"; }
-    Mod+Shift+O hotkey-overlay-title="Settings menu"     { spawn-sh "walker -m menus:settings"; }
 
     // Base
     Mod+Shift+Q repeat=false { close-window; }
-    Mod+Tab     repeat=false { toggle-overview; }
+    Mod+Escape  repeat=false { toggle-overview; }
     Mod+F       repeat=false { maximize-column; }
     Mod+Shift+F repeat=false { fullscreen-window; }
     Mod+Shift+V repeat=false { toggle-window-floating; }
@@ -35,7 +44,6 @@ binds {
     Mod+Shift+Slash  repeat=false { show-hotkey-overlay; }
     Mod+S            repeat=false { screenshot; }
     Mod+Shift+S      repeat=false { screenshot-screen; }
-    Mod+Ctrl+S       repeat=false { spawn-sh "niri msg action screenshot-screen --path /tmp/sc.png && gradia /tmp/sc.png"; }
 
     // Focus
     Mod+H     { focus-column-left; }
@@ -123,4 +131,5 @@ binds {
     XF86AudioNext         allow-when-locked=true { spawn-sh "playerctl next"; }
     XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
 }

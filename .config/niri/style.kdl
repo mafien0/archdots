@@ -82,3 +82,20 @@ animations {
         spring damping-ratio=1.0 stiffness=800 epsilon=0.001
     }
 }
+
+recent-windows {
+    debounce-ms 750
+    open-delay-ms 0
+
+    highlight {
+        active-color "#fff4e6ff"
+        urgent-color "#ff9999ff"
+        padding 30
+        corner-radius 5
+    }
+
+    previews {
+        max-height 480
+        max-scale 0.5
+    }
+}

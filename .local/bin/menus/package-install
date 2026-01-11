@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+sudo -v
+dnf repoquery --available | fzf --preview 'dnf info {1}' --layout=reverse | xargs -ro sudo dnf install -y

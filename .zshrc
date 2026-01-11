@@ -16,6 +16,7 @@ unsetopt PROMPT_SP
 # More PATH
 export PATH=$PATH:/sbin:/usr/sbin:/bin:/usr/bin:$HOME/.local/bin:$HOME/bin
 export PATH=$PATH:$HOME/idea/bin
+export PATH=$PATH:~/.spicetify
 
 # Starship
 eval "$(starship init zsh)"
@@ -38,11 +39,10 @@ alias alac="alacritty"
 alias t="tmux"
 
 # Zed
-export EDITOR="zeditor"
-alias zed="zeditor"
-alias v="zeditor"
-alias vi="zeditor"
-alias vim="zeditor"
+export EDITOR="zed"
+alias v="zed"
+alias vi="zed"
+alias vim="zed"
 
 # opencode
 export PATH=/home/mafien0/.opencode/bin:$PATH
