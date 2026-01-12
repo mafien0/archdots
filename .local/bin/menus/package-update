@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 sudo -v
-sudo dnf upgrade
+sudo pacman -Syu
+yay -Syu

@@ -8,9 +8,10 @@ output "HDMI-A-1" {
     mode "1920x1080@74.986"
 }
 
-spawn-sh-at-startup "lxpolkit"
+spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-sh-at-startup "walker --gapplication-service"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
+spawn-sh-at-startup "wl-clip-persist --clipboard regular"
 spawn-sh-at-startup "swaybg"
 spawn-sh-at-startup "waybar"
 spawn-sh-at-startup "waypaper --restore"

@@ -33,9 +33,10 @@ window-rule {
 
 // Media viewers
 window-rule {
-    match app-id="org.gnome.Showtime"
-    match app-id="org.gnome.Loupe"
+    match app-id=r"^.*\.Celluloid$"
+    match app-id=r"^.*\.Loupe$"
+    match app-id=r"^.*\.TextEditor$"
     open-floating true
     default-window-height { proportion 0.8; }
-    default-column-width { proportion 0.8; }
+    default-column-width  { proportion 0.8; }
 }
