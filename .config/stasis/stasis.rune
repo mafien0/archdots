@@ -1,0 +1,26 @@
+@author "mafien0"
+@description "Stasis configuration file"
+
+stasis:
+  pre_suspend_command "swaylock --clock --indicator"
+  monitor_media true
+  ignore_remote_media true
+  respect_idle_inhibitors true
+
+  dpms:
+    timeout 300
+    command "niri msg action power-off-monitors"
+    resume-command "niri msg action power-on-monitors"
+  end
+
+  lock_screen:
+    timeout 600
+    command "loginctl lock-session"
+    lock-command "swaylock --clock --indicator"
+  end
+
+  suspend:
+    timeout 900
+    command "systemctl suspend"
+  end
+end
