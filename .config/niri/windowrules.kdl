@@ -16,9 +16,14 @@ window-rule {
 // Popup menus
 window-rule {
     match app-id="popup"
-    match app-id="com.saivert.pwvucontrol"
     match app-id="waypaper"
-    match app-id="be.alexandervanhee.gradia"
+    match app-id="modrinth-app.*"
+    match app-id="Bitwarden"
+    match app-id=r"^.*\.pwvucontrol$"
+    match app-id=r"^.*\.MissionCenter$"
+    match app-id=r"^.*\.Warehouse$"
+    match app-id=r"^.*\.Flatseal$"
+    match app-id=r"^.*\.devtoolbox$"
     open-floating true
     default-window-height { proportion 0.8; }
     default-column-width { proportion 0.8; }

@@ -39,10 +39,11 @@ alias alac="alacritty"
 alias t="tmux"
 
 # Zed
-export EDITOR="zed"
-alias v="zed"
-alias vi="zed"
-alias vim="zed"
+export EDITOR="zeditor"
+alias zed="zeditor"
+alias v="zeditor"
+alias vi="zeditor"
+alias vim="zeditor"
 
 # opencode
 export PATH=/home/mafien0/.opencode/bin:$PATH
